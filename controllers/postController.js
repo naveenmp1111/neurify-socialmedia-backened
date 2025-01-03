@@ -1,6 +1,5 @@
-
-const asyncHandler = require('express-async-handler')
-const { default: Post } = require('../models/postModel')
+import asyncHandler from 'express-async-handler';
+import Post from '../models/postModel.js';
 
 export const createPost = asyncHandler(async (req, res) => {
     try {

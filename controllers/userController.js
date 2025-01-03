@@ -1,6 +1,5 @@
-import User from "../models/userModel"
-import User from "../models/userModel"
-const asyncHandler = require('express-async-handler')
+import User from "../models/userModel.js"
+import asyncHandler from 'express-async-handler';
 
 export const registerUser = asyncHandler(async (req, res) => {
     try {

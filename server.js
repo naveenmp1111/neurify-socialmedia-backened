@@ -1,10 +1,10 @@
-const express = require('express')
-const app = express()
-const mongoose = require('mongoose')
-const { registerUser, Login } = require('./controllers/userController')
-const { createPost, updatePost, deletePost } = require('./controllers/postController')
-const { authMiddleware } = require('./middlewares/authMiddleware')
+import express from 'express';
+import mongoose from 'mongoose';
+import { registerUser, Login } from './controllers/userController.js';
+import { createPost, updatePost, deletePost } from './controllers/postController.js';
+import { authMiddleware } from './middlewares/authMiddleware.js';
 
+const app = express();
 
 app.use(express.urlencoded({ extended: true }))
 
